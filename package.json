@@ -1,0 +1,26 @@
+{
+  "name": "movie-finder-app",
+  "version": "1.0.0",
+  "description": "A lightweight, responsive web application that showcases the latest movies and their details in a modal interface. Users can explore each film’s genre, runtime, certification, ratings, release date, and available streaming providers (Rent, Buy, or Stream). All movie data is dynamically retrieved from The Movie Database (TMDB) API, ensuring real-time updates and scalable content delivery.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iorivilla84/movie-finder-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iorivilla84/movie-finder-app/issues"
+  },
+  "homepage": "https://github.com/iorivilla84/movie-finder-app#readme",
+  "devDependencies": {
+    "vite": "^7.0.6"
+  }
+}

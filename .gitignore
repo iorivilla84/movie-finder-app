@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Node modules
+node_modules/
+
+# Vite output (if you build the project)
+dist/
+
+# Mac system files
+.DS_Store
+
+.vscode/
+npm-debug.log*
