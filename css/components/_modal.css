@@ -1,0 +1,112 @@
+:root {
+    --white: #fff;
+    --star-background: rgb(192 24 76);
+}
+
+.movie-modal-content {
+    background-size: cover !important;
+    padding: 0;
+
+    @media screen and (min-width: 1400px) {
+        background-position: left calc((50vw - 170px) - 340px) center !important;
+    }
+}
+
+.movie-modal-content__overlay {
+    background-image: 
+        linear-gradient(to right, rgb(33 37 41) calc((50vw - 170px) - 340px), rgb(33 37 41 / 84%) 50%, rgb(33 37 41 / 84%) 100%)
+}
+
+.facts {
+    &::before {
+        content: '-';
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        &::before {
+            content: '';
+            margin: 0;
+        }
+    }
+}
+
+.movie-modal__facts span {
+    @media screen and (max-width: 768px) {
+        margin: 0 0 8px;
+
+        &:not(:first-child) {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.movie-modal-reviews-stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+
+    display: inline-block;
+    font-size: 25px;
+    line-height: 1;
+
+    &::before {
+        content: '★★★★★';
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--white) var(--percent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+  
+.movie-modal-reviews-stars[style^="--rating: 0;"] {
+    &::before {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: var(--white);
+    }
+}
+
+.movie-modal-footer {
+    padding: 1rem 0;
+
+}
+
+.movie-modal__img-provider {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 10%;
+
+    @media screen and (min-width: 768px) {
+        width: 20%;
+    }
+}
+
+.logo-provider-content {
+    color: #fff;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        &::after {
+            background-color: var(--white);
+            content: '';
+            height: 100%;
+            opacity: 0.2;
+            position: absolute;
+            right: 10%;
+            top: 0;
+            width: 2px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        &::after {
+            right: 12%;
+        }
+    }
+
+    &:last-child {
+        &::after {
+            width: 0;
+        }
+    }
+}
