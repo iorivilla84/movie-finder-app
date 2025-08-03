@@ -2,7 +2,7 @@
 
 A lightweight, responsive web application that showcases the latest movies and their details in a modal interface. Users can explore each film’s genre, runtime, certification, ratings, release date, and available streaming providers (Rent, Buy, or Stream). All movie data is dynamically retrieved from The Movie Database (TMDB) API, ensuring real-time updates and scalable content delivery.
 
-The project is built with semantic HTML5, modern CSS (with nesting following Sass-like structure), Bootstrap for layout responsiveness, and vanilla ES6+ JavaScript with modular architecture and clear component separation. Continuous deployment is handled via Netlify, enabling automatic updates on every push to GitHub
+The project is built with semantic HTML5, modern CSS (with nesting following Sass-like structure), Bootstrap for layout responsiveness, Font Awesome for friendly icons styles, and vanilla ES6+ JavaScript with modular architecture and clear component separation. Continuous deployment is handled via Netlify, enabling automatic updates on every push to GitHub
 
 ## Features
 
@@ -20,6 +20,7 @@ The project is built with semantic HTML5, modern CSS (with nesting following Sas
 - **HTML5** – Semantic, accessible markup
 - **CSS (with nesting)** – Sass-like organization (without a preprocessor)
 - **Bootstrap 5** – Responsive layout and utility classes
+- **Font Awesome** – For friendly structural icon styles 
 - **JavaScript (ES6+)** – Modular and component-based architecture
 - **Fetch API** – For asynchronous data fetching
 - **Node.js + Vite** – Local development and build tools

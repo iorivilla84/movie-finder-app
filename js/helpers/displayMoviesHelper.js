@@ -157,7 +157,9 @@ const moviesView = {
         const html = `
             <div class="modal-content movie-modal-content rounded-0 border-0" style="background: url(${movieDetails.backgroundImg}) no-repeat top center;">
                 <div class="movie-modal-content__overlay d-flex flex-wrap flex-column p-2 py-4 p-md-4 col-12 text-light">
-                    <button type="button" class="btn align-self-end position-absolute  text-light" data-bs-dismiss="modal" aria-label="Close">X</button> 
+                    <button type="button" class="btn btn-secondary align-self-end position-absolute close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button> 
                     <div class="container d-flex flex-wrap">
                         <div class="col-12 col-md-3">
                             <figure class="m-0">
